@@ -12,18 +12,13 @@ h1 {
   font-size: 42px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 0px #4a3f7a, 4px 4px 0px rgba(0,0,0,0.3);
-  animation: pulse 5s ease-in;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.5); }
+  50% { text-shadow: 0 0 25px rgba(255,255,255,1); }
+}
 }
 
 body > p {
