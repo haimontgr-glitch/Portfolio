@@ -11,9 +11,20 @@ h1 {
   color: white;
   font-size: 42px;
   margin-bottom: 10px;
-  text-shadow: 3px 3px 0px #2c1f4a, 6px 6px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 0px #4a3f7a, 4px 4px 0px rgba(0,0,0,0.3);
+  animation: fadeIn 2s ease-in;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 body > p {
   color: #eee;
